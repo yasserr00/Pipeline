@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1762594568460
+current_stage: None
+description: null
+last_updated_timestamp: 1762594568460
+name: Linear Regression
+run_id: ed51a1efb9ea46c4abb6325040586056
+run_link: null
+source: /Users/nimantha/Desktop/Nimantha/MLOPs/Pipeline/mlruns/396329783321082474/ed51a1efb9ea46c4abb6325040586056/artifacts/model
+status: READY
+status_message: null
+storage_location: /Users/nimantha/Desktop/Nimantha/MLOPs/Pipeline/mlruns/396329783321082474/ed51a1efb9ea46c4abb6325040586056/artifacts/model
+user_id: null
+version: 7

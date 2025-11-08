@@ -1,0 +1,15 @@
+artifact_uri: /Users/nimantha/Desktop/Nimantha/MLOPs/Pipeline/mlruns/396329783321082474/5db695fc32f344d0a7605bba6d133819/artifacts
+end_time: 1762600020429
+entry_point_name: ''
+experiment_id: '396329783321082474'
+lifecycle_stage: active
+run_id: 5db695fc32f344d0a7605bba6d133819
+run_name: XGBoost
+run_uuid: 5db695fc32f344d0a7605bba6d133819
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762600017294
+status: 3
+tags: []
+user_id: root
