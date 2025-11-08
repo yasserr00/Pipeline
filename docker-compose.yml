@@ -42,8 +42,8 @@ services:
       - http://localhost:5000/health
       interval: 30s
       timeout: 10s
-      retries: 5
-      start_period: 60s
+      retries: 10
+      start_period: 300s
     networks:
     - ml-pipeline-network
     restart: unless-stopped

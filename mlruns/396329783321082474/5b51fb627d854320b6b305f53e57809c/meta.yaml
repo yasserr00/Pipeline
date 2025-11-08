@@ -1,0 +1,15 @@
+artifact_uri: /Users/nimantha/Desktop/Nimantha/MLOPs/Pipeline/mlruns/396329783321082474/5b51fb627d854320b6b305f53e57809c/artifacts
+end_time: 1762536814277
+entry_point_name: ''
+experiment_id: '396329783321082474'
+lifecycle_stage: active
+run_id: 5b51fb627d854320b6b305f53e57809c
+run_name: Random Forest
+run_uuid: 5b51fb627d854320b6b305f53e57809c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762536810750
+status: 3
+tags: []
+user_id: nimantha

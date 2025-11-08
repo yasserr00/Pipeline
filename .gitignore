@@ -22,23 +22,19 @@ wheels/
 
 # Virtual Environment
 venv/
-env/
+#env/
 ENV/
 .venv
 
 # MLflow
-mlruns/
-mlartifacts/
+#mlruns/
+#mlartifacts/
 
 # Models
-models/*.pkl
-models/*.joblib
-models/*.h5
-models/*.onnx
-!models/.gitkeep
+
 
 # Data
-data/*.csv
+#data/*.csv
 data/*.parquet
 data/*.json
 !data/.gitkeep
@@ -69,7 +65,7 @@ logs/
 !.env.example
 
 # Configuration files with sensitive data
-dev.yml
+
 !dev.yml.example
 
 # Model artifacts

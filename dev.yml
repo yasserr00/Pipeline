@@ -1,0 +1,76 @@
+# Development Configuration File
+# Centralized config for all services
+# Change values here and they will be reflected everywhere
+
+# PostgreSQL Configuration
+postgres:
+  user: airflow
+  password: airflow  # Change this for production
+  database: airflow
+  port: 5432
+  host: postgres  # Internal Docker hostname
+  external_port: 5432  # External port mapping
+
+# Airflow Configuration
+airflow:
+  home: /app/airflow
+  executor: LocalExecutor
+  load_examples: false
+  dags_paused_at_creation: true
+  webserver_port: 8080
+  webserver_external_port: 8080
+  admin_username: admin
+  admin_password: admin  # Change this for production
+  admin_email: admin@example.com
+  admin_firstname: Admin
+  admin_lastname: User
+
+# MLflow Configuration
+mlflow:
+  tracking_uri: http://mlflow:5000  # Internal Docker hostname
+  port: 5000  # Internal port
+  external_port: 5001  # External port mapping (changed from 6000 - unsafe port blocked by Chrome)
+  backend_store_uri: file:///app/mlruns
+  default_artifact_root: /app/mlruns
+  host: 0.0.0.0
+
+# Network Configuration
+network:
+  name: ml-pipeline-network
+  driver: bridge
+
+# Volume Paths
+volumes:
+  postgres_data: postgres_data
+  airflow_dags: ./airflow/dags
+  airflow_logs: ./airflow/logs
+  airflow_plugins: ./airflow/plugins
+  data: ./data
+  mlruns: ./mlruns
+  models: ./models
+
+# Environment
+environment: development
+
+# Health Check Configuration
+healthcheck:
+  interval: 30s
+  timeout: 10s
+  retries: 10
+  start_period: 300s  # 5 minutes for MLflow to install packages
+
+# Model Serving API Configuration
+api:
+  experiment_name: House_Price_Prediction
+  port: 5050
+  external_port: 5050
+  host: 0.0.0.0
+
+# Container Names
+containers:
+  postgres: ml-pipeline-postgres
+  mlflow: ml-pipeline-mlflow
+  webserver: ml-pipeline-webserver
+  scheduler: ml-pipeline-scheduler
+  api: ml-pipeline-api
+

@@ -1,0 +1,15 @@
+artifact_uri: /Users/nimantha/Desktop/Nimantha/MLOPs/Pipeline/mlruns/396329783321082474/d6a44ce312ab46b581e0cda53725caf5/artifacts
+end_time: 1762536738727
+entry_point_name: ''
+experiment_id: '396329783321082474'
+lifecycle_stage: active
+run_id: d6a44ce312ab46b581e0cda53725caf5
+run_name: Linear Regression
+run_uuid: d6a44ce312ab46b581e0cda53725caf5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762536738670
+status: 4
+tags: []
+user_id: nimantha

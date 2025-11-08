@@ -1,0 +1,16 @@
+feature,importance
+square_feet,0.41036627
+square_feet_x_bedrooms,0.25746614
+pool,0.090081014
+school_rating,0.051698823
+bathrooms,0.04444161
+location_score,0.038529202
+garage,0.02749227
+age,0.026480965
+distance_to_city,0.016370099
+crime_rate,0.0132759
+lot_size,0.008585187
+year_built,0.0043208273
+energy_efficiency,0.003974655
+neighborhood,0.003941545
+bedrooms,0.0029755754
