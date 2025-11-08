@@ -397,6 +397,66 @@ The complete pipeline consists of 6 tasks:
 extract_data → validate_data_quality → preprocess_data → train_model → evaluate_model → send_alert
 ```
 
+## GitHub Setup
+
+This repository is ready to be pushed to GitHub. The following files are configured:
+
+- **`.gitignore`**: Excludes sensitive files, virtual environments, and generated artifacts
+- **`dev.yml.example`**: Template configuration file (safe to commit)
+- **`dev.yml`**: Actual configuration with passwords (NOT committed, excluded in .gitignore)
+
+### Pushing to GitHub
+
+1. **Create a GitHub repository**:
+   - Go to https://github.com and create a new repository
+   - Do NOT initialize with README, .gitignore, or license
+
+2. **Add remote and push**:
+   ```bash
+   # Add remote (replace with your repository URL)
+   git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+   
+   # Or use SSH
+   git remote add origin git@github.com:YOUR_USERNAME/REPO_NAME.git
+   
+   # Push to GitHub
+   git branch -M main
+   git push -u origin main
+   ```
+
+   Or use the provided script:
+   ```bash
+   bash PUSH_TO_GITHUB.sh
+   ```
+
+3. **After cloning**:
+   ```bash
+   # Copy the example config
+   cp dev.yml.example dev.yml
+   
+   # Edit dev.yml with your own passwords and settings
+   nano dev.yml  # or use your preferred editor
+   ```
+
+### What's Included/Excluded
+
+**Included in Git:**
+- All source code
+- Configuration templates (`dev.yml.example`)
+- Docker setup files
+- Documentation
+- Scripts
+
+**Excluded from Git (via .gitignore):**
+- `dev.yml` - Actual config with passwords
+- `venv/` - Virtual environment
+- `mlruns/` - MLflow tracking data
+- `data/*.csv` - Data files
+- `*.log` - Log files
+- `__pycache__/` - Python cache
+
+For detailed setup instructions, see `.github_setup.md`.
+
 ## Troubleshooting
 
 ### Services Not Starting
