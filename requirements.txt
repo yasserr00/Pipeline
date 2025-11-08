@@ -1,0 +1,30 @@
+# Core Data Science Libraries
+pandas==2.1.4
+numpy==1.26.2
+scikit-learn==1.4.0
+
+# MLflow for Experiment Tracking
+mlflow==2.11.3
+
+
+# Machine Learning Models
+xgboost==2.0.3
+
+# Data Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+
+# Model Serving (optional)
+flask==2.2.5
+
+flask-cors==4.0.0
+joblib==1.3.2
+
+
+apache-airflow==2.8.0
+Flask-Session==0.4.0
+
